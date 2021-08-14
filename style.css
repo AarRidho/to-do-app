@@ -573,6 +573,14 @@
   height: 70px;
 }
 
+#demo .demo-app .btn-done-item {
+  border-radius: 10px;
+  color: #fff!important;
+  background-color: #20c997;
+  width: 70px;
+  height: 70px;
+}
+
 #testimonial {
   position: relative;
   padding-top: 0 !important;
@@ -818,6 +826,10 @@
   font-family: "Inter UI";
   color: rgb(84, 110, 122);
   line-height: 1.5;
+}
+
+.form-control:disabled {
+  background-color: #adb5bd;
 }
 
 #kontak .card-contact .map-wrapper {

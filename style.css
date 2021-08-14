@@ -1,0 +1,999 @@
+:root {
+  --app-background: rgba(236, 239, 241, 0.2);
+  line-height: 48px;
+  font-weight: 400;
+}
+
+#app {
+  font-family: "Inter UI", Poppins, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  background-color: var(--app-background);
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#app main {
+  overflow: hidden;
+}
+
+#app section {
+  padding-top: 7rem;
+  padding-bottom: 3rem;
+}
+
+.title-section {
+  font-size: 36px;
+  font-family: Poppins;
+  font-weight: 400;
+  color: rgb(38, 50, 56);
+  line-height: 1.389;
+  text-align: center;
+  z-index: 3;
+  margin-bottom: 8.875rem;
+}
+
+.navbar-main {
+  padding-top: 0;
+  padding-bottom: 0;
+  padding-top: 4.124rem;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1920px;
+  transition: all .3s ease-in-out;
+}
+
+.nav-scrolled {
+  background-color: var(--bs-white) !important;
+  color: #333 !important;
+  box-shadow: 0 3px 20px rgb(0, 0, 0, 20%);
+  padding-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.nav-scrolled a, .nav-scrolled i {
+  color: #333 !important;
+}
+
+@media (min-width: 1400px) {
+  .navbar-main .navbar-brand {
+    margin-left: 124px;
+  }
+}
+
+.navbar-main .navbar-nav {
+  margin-left: auto;
+  margin-right: 0;
+}
+
+.navbar-main ul > li > a {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.1rem;
+  color: var(--bs-white);
+  padding-left: 1.375rem !important;
+  padding-right: 1.375rem !important;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-main ul > li:last-child > a {
+  padding-left: 71px !important;
+  padding-right: 0px !important;
+}
+
+.navbar-main .search-icon::before {
+  content: url("/img/search-icon.svg");
+  display: inline-block;
+  margin-left: 0.255em;
+  vertical-align: 0.255em;
+  vertical-align: middle;
+  margin-top: 0.5rem;
+}
+
+#about {
+  padding-top: 0 !important;
+}
+
+.hero {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  min-height: 1000px;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
+  z-index: 2;
+
+  background-image: url("/img/about-bg.svg");
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
+.shapes {
+  position: absolute;
+  overflow: hidden;
+}
+
+.hero .shapes {
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.hero .shapes :first-child {
+  background-image: url("/img/hero-stars.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 124px;
+  top: 0px;
+  width: 1796px;
+  height: 343px;
+  z-index: 1;
+}
+
+.hero .shapes :nth-child(2) {
+  /* border-radius: 50%; */
+  /* background-color: rgb(249, 251, 231); */
+  background-image: url("/img/hero-shape-1.svg");
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 65px;
+  top: 58px;
+  width: 118px;
+  height: 118px;
+  z-index: 1;
+}
+
+.hero .shapes :nth-child(3) {
+  position: absolute;
+  background-image: url("/img/hero-shape-2.svg");
+  background-repeat: no-repeat;
+  right: -200px;
+  top: 0px;
+  width: 1064px;
+  height: 51px;
+  z-index: 1;
+}
+
+.hero .shapes :nth-child(4) {
+  position: absolute;
+  background-image: url("/img/hero-shape-3.svg");
+  background-repeat: no-repeat;
+  left: 0px;
+  top: 0px;
+  width: 111px;
+  height: 1018px;
+  z-index: 1;
+}
+
+@media (min-width: 998px) {
+  .hero .shapes :nth-child(3) {
+    right: 0px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .navbar-main .container,
+  .hero .container {
+    max-width: 1442px;
+  }
+}
+
+.hero .header {
+  /* padding-top: 147.98px; */
+  /* padding-top: 200.98px; */
+  padding-top: 260.98px;
+  display: flex;
+}
+
+@media (max-width: 767.98px) {
+  .hero .header {
+    padding-top: 195.98px;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 768px) {
+  .hero .header {
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1400px) {
+  .hero .header {
+    margin-left: 124px;
+  }
+}
+
+.hero .header .text {
+  z-index: 2;
+  max-width: 471px;
+}
+
+.hero .header .text > h1 {
+  font-size: 2.8rem;
+  font-family: Poppins;
+  color: var(--bs-white);
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: left;
+}
+
+.hero .header .text > p {
+  max-width: 481px;
+  margin: 0;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Inter UI";
+  color: var(--bs-white);
+  line-height: 2;
+  text-align: left;
+}
+
+.hero .header .header-button {
+  margin-top: 33px;
+  padding-top: 28px;
+  padding-bottom: 26px;
+  padding-left: 29px;
+  padding-right: 17px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  font-size: 20px;
+  font-family: "Inter UI";
+  font-weight: 600;
+  color: rgb(55, 71, 79);
+}
+
+.hero .header .header-button > i {
+  padding-left: 15px;
+}
+
+.hero .header .header-button > i::before {
+  content: url("/img/arrow.svg");
+  vertical-align: middle;
+}
+
+.hero .header figure {
+  position: relative;
+  display: block;
+  z-index: 2;
+}
+
+.hero .header figure > svg {
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+}
+
+#house {
+  position: absolute;
+  max-width: 967px;
+  max-height: 770px;
+  top: 0px;
+  right: 0px;
+}
+
+#house img {
+  object-fit: contain;
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #house {
+    top: -160px;
+    right: -200px;
+  }
+
+  #house img {
+    width: 627.92px;
+    height: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  #house {
+    right: -100px;
+  }
+  #house img {
+    width: 753.5px;
+    height: 600px;
+  }
+}
+
+@media (min-width: 1400px) {
+  #house {
+    right: 0px;
+  }
+
+  #house img {
+    width: 879px;
+    height: 700px;
+  }
+}
+
+@media (min-width: 1720px) {
+  #house {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    display: block;
+    right: -150px;
+  }
+
+  #house img {
+    width: 967px;
+    height: 770px;
+  }
+}
+
+#keunggulan {
+  /* background-color: var(--bs-white); */
+  background-color: transparent;
+  display: block;
+  /* min-height: 100vh; */
+  position: relative;
+}
+
+#keunggulan h1 {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#keunggulan .bg-overlay {
+  background-image: url("/img/kg-bg-overlay.svg");
+  background-repeat: no-repeat;
+  opacity: 0.502;
+  position: absolute;
+  right: -1467px;
+  top: -1004px;
+  width: 3261px;
+  height: 2837px;
+  z-index: 1;
+}
+
+.section-card {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-wrapper {
+  display: grid;
+  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+.card {
+  background-color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 20px 0px 20px 20px;
+  box-shadow: 0px 27px 20px 0px rgba(207, 216, 220, 0.15);
+  font-family: "Inter UI";
+  z-index: 3;
+}
+
+#keunggulan .section-card {
+  max-width: 1168px;
+}
+
+#keunggulan .card {
+  max-width: 550px;
+  margin-bottom: 4.063rem;
+}
+
+#keunggulan .card .card-bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#keunggulan .card-bg .bg-wrapper {
+  padding-top: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#keunggulan .bg-wrapper h1 {
+  font-size: 100px;
+  margin: 0;
+  color: rgba(207, 216, 220, 0.2);
+  line-height: 0.8;
+  text-align: right;
+  width: 100%;
+}
+
+#keunggulan .card .card-body {
+  text-align: left;
+  margin-top: 3.5rem;
+  margin-bottom: 5.125rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+#keunggulan .card .card-title {
+  font-size: 24px;
+  color: rgb(38, 50, 56);
+  font-weight: bold;
+  line-height: 1.498;
+  margin-bottom: 1.75rem;
+}
+
+#keunggulan .card .card-text {
+  font-size: 18px;
+  color: rgb(84, 110, 122);
+  line-height: 2;
+}
+
+.card .card-img {
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+}
+
+#keunggulan .card .card-img {
+  padding-top: 3.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 3.5rem;
+}
+
+#keunggulan .section-card .row {
+  z-index: 2;
+}
+
+#keunggulan .section-card .call {
+  background-color: #2fc9ef;
+  color: var(--bs-white);
+  border-radius: 20px 0 20px 20px;
+  box-shadow: 0px 30px 35px 0px rgba(47, 201, 239, 0.15);
+  width: 280px;
+  height: 75px;
+  z-index: 9;
+  z-index: 2;
+}
+
+@media (min-width: 768px) {
+  #keunggulan .title-section {
+    max-width: 415px;
+  }
+
+  #keunggulan .bg-wrapper h1 {
+    font-size: 150px;
+  }
+
+  #keunggulan .card-bg .bg-wrapper {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  #keunggulan .card .card-body {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+
+  #keunggulan .card .card-img {
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+  }
+}
+
+@media (min-width: 998px) {
+  #keunggulan .bg-wrapper h1 {
+    font-size: 200px;
+  }
+}
+
+.splash {
+  position: absolute;
+}
+
+.splash-middle {
+  background-image: url("/img/splash.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  left: 0px;
+  top: 1568px;
+  /* width: 1920px; */
+  width: 100%;
+  height: 1850px;
+  z-index: -1;
+}
+
+#demo {
+  padding-top: 0 !important;
+}
+
+#demo .section-demo {
+  max-width: 1168px;
+}
+
+#demo .card {
+  min-height: 761px;
+  border-radius: 10px;
+  box-shadow: 0px 3px 7px 0px rgba(0, 0, 0, 0.35);
+  color: var(--bs-white);
+  background-color: #5fd0fa;
+}
+
+#demo .card .title-section {
+  font-size: 30px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  line-height: 1;
+  text-align: center;
+  margin-top: 2.313rem;
+  margin-bottom: 0;
+}
+
+#demo .card .demo-app {
+  margin-top: 4.438rem;
+  padding-left: 7.688rem;
+  padding-right: 7.688rem;
+  text-align: left;
+}
+
+#demo .demo-app button {
+  color: var(--bs-white);
+  border-radius: 10px;
+  background-color: rgb(0, 174, 239);
+  width: 225px;
+  height: 70px;
+  margin-bottom: 1rem;
+}
+
+#demo .demo-app h5 {
+  font-family: "Inter UI";
+  color: rgb(255, 255, 255);
+  line-height: 1.5;
+  font-weight: 300;
+  letter-spacing: 0.1em;
+  text-align: left;
+}
+
+#demo .demo-app .item-wrapper {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+#demo .demo-app .btn-delete-item {
+  border-radius: 10px;
+  background-color: rgb(246, 150, 121);
+  width: 70px;
+  height: 70px;
+}
+
+#testimonial {
+  position: relative;
+  padding-top: 0 !important;
+}
+
+#testimonial .section-card {
+  max-width: 1458px;
+}
+
+#testimonial .section-card .button-prev {
+  border-style: solid;
+  border: 3px solid transparent;
+  box-shadow: 0px 30px 35px 0px rgba(31, 110, 227, 0.15);
+  background-color: var(--bs-white);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  font-size: 10px;
+  transition: border 0.2s ease-in-out;
+}
+
+#testimonial .section-card .button-prev:active,
+#testimonial .section-card .button-prev:focus {
+  border: 3px solid rgb(47, 201, 239);
+}
+
+#testimonial .card-wrapper {
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#testimonial .card {
+  background-color: rgb(255, 255, 255);
+  position: relative;
+  max-width: 550px;
+  margin-bottom: 4.063rem;
+  border-radius: 20px;
+  box-shadow: 0px 27px 20px 0px rgba(207, 216, 220, 0.15);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#testimonial .card .card-img {
+  border-radius: 50%;
+  box-shadow: 0px 27px 20px 0px rgba(207, 216, 220, 0.5);
+  position: absolute;
+  overflow: hidden;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2.938rem;
+  width: 100px;
+  height: 100px;
+  z-index: 4;
+  display: flex;
+  justify-content: center;
+}
+
+#testimonial .card .card-body {
+  padding-top: 5.938rem;
+  padding-bottom: 0;
+}
+
+.card .card-quote {
+  font-family: "Inter UI";
+  font-size: 16px;
+  color: rgb(84, 110, 122);
+  line-height: 1.875;
+  text-align: left;
+  padding-bottom: 3.25rem;
+}
+
+.card .card-quote-user {
+  padding-bottom: 3.75rem;
+}
+
+.card .card-quote-user h5,
+.card .card-quote-user h6 {
+  font-family: "Inter UI";
+  font-weight: bold;
+  text-align: left;
+}
+
+.card .card-quote-user h5 {
+  font-size: 20px;
+  line-height: 1.797;
+  color: rgb(47, 201, 239);
+}
+
+.card .card-quote-user h6 {
+  font-size: 18px;
+  line-height: 1.997;
+  color: rgb(38, 50, 56);
+  margin-bottom: 0;
+}
+
+#testimonial .shapes {
+  max-width: 1458px;
+  left: 255px;
+  top: 575px;
+}
+
+@media (min-width: 768px) {
+  #testimonial .card .card-img {
+    left: 4.313rem;
+    transform: translateX(0);
+  }
+
+  #testimonial .card-wrapper {
+    gap: 39px;
+    grid-template-columns: repeat(auto-fit, minmax(550px, 1fr));
+  }
+
+  #testimonial .card .card-body {
+    padding-left: 4.313rem;
+    padding-right: 4.313rem;
+  }
+
+  #testimonial .section-card .button-prev {
+    width: 74px;
+    height: 74px;
+  }
+}
+
+#kontak .container {
+  max-width: 1440px;
+}
+
+#kontak .card-contact {
+  position: relative;
+  color: var(--bs-white);
+  text-align: left;
+  box-shadow: 0px 42px 35px 0px rgba(31, 110, 227, 0.15);
+  background-color: #4588e6;
+  max-width: 1290px;
+}
+
+#kontak .svg-container {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+#kontak .svg-container svg {
+  position: absolute;
+}
+
+#kontak .svg-contact {
+  z-index: 1;
+  background-image: -moz-linear-gradient(
+    120deg,
+    rgb(71, 146, 232) 0%,
+    rgb(240, 167, 191) 100%
+  );
+  background-image: -webkit-linear-gradient(
+    120deg,
+    rgb(71, 146, 232) 0%,
+    rgb(240, 167, 191) 100%
+  );
+  background-image: -ms-linear-gradient(
+    120deg,
+    rgb(71, 146, 232) 0%,
+    rgb(240, 167, 191) 100%
+  );
+  border-radius: 20px 0px 20px 20px;
+}
+
+#kontak .svg-container svg:first-child {
+  left: -26px;
+  top: -130px;
+}
+
+#kontak .card-contact > .card-body {
+  z-index: 2;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+#kontak .card-contact > .card-body > .row {
+  --bs-gutter-x: 6rem;
+}
+
+#kontak .card-contact .title-section {
+  margin-top: 6.625rem;
+}
+
+#kontak .card-contact .title-section {
+  font-size: 36px;
+  font-family: "Poppins";
+  color: rgb(255, 255, 255);
+  line-height: 1.248;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+#kontak .card-contact p {
+  font-size: 16px;
+  font-family: "Inter UI";
+  color: rgb(178, 201, 243);
+  line-height: 1.625;
+  text-align: left;
+  margin-bottom: 1.8rem;
+}
+
+#kontak .card-form label {
+  font-size: 16px;
+  font-family: "Inter UI";
+  color: rgb(255, 255, 255);
+  font-weight: 400;
+  text-align: left;
+  text-transform: uppercase;
+  margin-bottom: 1.313rem;
+}
+
+#message {
+  min-height: 217px;
+}
+
+#kontak .card-contact .submit-button {
+  background-color: #2fc9ef;
+  box-shadow: 0px 30px 35px 0px rgba(31, 110, 227, 0.15);
+  color: #fff;
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
+  padding-top: 19px;
+  padding-bottom: 19px;
+  border-radius: 10px 0 10px 10px;
+}
+
+.form-control {
+  box-shadow: 0px 15px 35px 0px rgb(31 110 227 / 5%);
+  border-radius: 8px 0px 8px 8px;
+  margin-bottom: 1.438rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+  padding-left: 1.688rem;
+  padding-right: 1.688rem;
+}
+
+.form-control::placeholder {
+  font-size: 16px;
+  font-family: "Inter UI";
+  color: rgb(84, 110, 122);
+  line-height: 1.5;
+}
+
+#kontak .card-contact .map-wrapper {
+  position: relative;
+}
+
+#kontak .map-wrapper .card-map {
+  background-color: #4793e8;
+  box-shadow: 0px 42px 35px 0px rgba(31, 110, 227, 0.15);
+  margin-top: 5.063rem;
+  z-index: 5;
+  border-radius: 15px;
+  margin-bottom: 5.313rem;
+}
+
+#kontak .svg-map > svg:first-child {
+  position: absolute;
+  top: -161px;
+  left: -346px;
+}
+
+#kontak .svg-map > img:nth-child(2) {
+  position: absolute;
+  top: -158px;
+  left: 34px;
+  z-index: 6;
+}
+
+#kontak .svg-map > svg:nth-child(3) {
+  position: absolute;
+  top: 196px;
+  left: 205px;
+  z-index: 7;
+}
+#kontak .svg-map > svg:nth-child(4) {
+  left: 220px;
+  top: 211px;
+  z-index: 37;
+}
+
+#kontak .svg-map > svg:nth-child(5) {
+  top: 45px;
+  right: 3px;
+}
+
+#kontak .svg-map > svg:nth-child(6) {
+  top: 59px;
+  right: 51px;
+}
+
+#kontak .card-map .card-body {
+  margin-top: 394px;
+  padding-left: 3.688rem;
+  padding-right: 3.688rem;
+  z-index: 7;
+  color: var(--bs-white);
+}
+
+#kontak .card-map .card-text > .phone {
+  color: #2fc9ef;
+}
+
+@media (min-width: 768px) {
+  #kontak .map-wrapper .card-map {
+    position: absolute;
+    top: 0;
+    width: 522px;
+    height: 584px;
+  }
+
+  #kontak .card-contact > .card-body {
+    padding-left: 7.125rem;
+    padding-right: 7.125rem;
+    margin-bottom: 5.313rem;
+  }
+}
+
+.splash-footer {
+  background-image: url("/img/splash-footer.svg");
+  background-repeat: no-repeat;
+  background-position: top center;
+  /* height: 1000px; */
+  top: -145px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+@media (min-width: 768px) {
+  .splash-footer {
+    background: none;
+    height: 1000px;
+    top: -620px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter UI";
+  text-align: left;
+  color: var(--bs-white);
+  display: flex;
+  position: relative;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+footer .container {
+  z-index: 1;
+  max-width: 1440px;
+}
+
+footer .container p {
+  font-size: 16px;
+  font-family: "Inter UI";
+  color: rgb(255, 255, 255);
+  line-height: 1.75;
+  text-align: left;
+  font-weight: 300;
+  max-width: 355.86px;
+}
+
+footer .links h5 {
+  font-size: 18px;
+  font-weight: 400;
+  text-transform: uppercase;
+  line-height: 2.222;
+  margin-bottom: 1rem;
+  letter-spacing: 0.1em;
+}
+
+@media (min-width: 768px) {
+  footer .links h5 {
+    margin-bottom: 4rem;
+  }
+}
+
+footer .links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+footer .links a {
+  font-size: 16px;
+  line-height: 2.5;
+  font-weight: 400;
+}
+
+footer .social-links a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255);
+  width: 47px;
+  height: 47px;
+  margin-left: 0.3rem;
+  margin-right: 0.3rem;
+}
+
+footer .copyright {
+  margin-top: 2.313rem;
+  padding-top: 2.625rem;
+  padding-bottom: 1.625rem;
+  border-top: 1px solid rgb(238, 241, 242, 0.2);
+}
+
+/* footer .social-links a > svg {
+  position: absolute;
+  left: -10px;
+} */
